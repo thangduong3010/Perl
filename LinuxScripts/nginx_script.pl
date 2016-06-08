@@ -18,7 +18,8 @@ Reading – This component returns the number of currently reading requests head
 
 Writing – This component returns the number of currently reading requests body, processing requests, or writing responses to a client.
 
-Waiting – This component returns the number of keep-alive connections, calculated as: Active-(Reading+Writing). Non-zero values do not always mean poor performance because this value depends on the keepalive-timeout setting.
+Waiting – This component returns the number of keep-alive connections, calculated as: Active-(Reading+Writing).
+Non-zero values do not always mean poor performance because this value depends on the keepalive-timeout setting.
 
 Note: Before using this monitor, the correct argument should be set. This monitor requires the following arguments:
    perl ${SCRIPT} ip_address port
